@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logincadastro"
+    tools:context=".Activity.Cadastro1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="99dp"
+        android:text="Cadastro"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="23sp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="168dp"
+        android:layout_height="106dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginRight="118dp"
+        app:srcCompat="@drawable/usercadastro" />
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="270dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/emailTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/shapbord"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"/>
+
+
+        <EditText
+            android:id="@+id/senhaTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:background="@drawable/shapbord"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"/>
+
+        <EditText
+            android:id="@+id/confirmarSenhaTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shapbord"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:ems="10"
+            android:hint="Confirmar senha"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnProximo"
+        android:layout_width="114dp"
+        android:layout_height="53dp"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/buttonbase2"
+        android:onClick="irParaCadastro2"
+        android:text="Próximo"
+        android:textColor="@android:color/background_light" />
+
+
+</RelativeLayout>

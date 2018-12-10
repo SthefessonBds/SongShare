@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menulogin">
+
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="260dp"
+        android:layout_height="77dp"
+        android:layout_alignEnd="@+id/btnCadastrar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="283dp"
+        android:layout_marginEnd="-1dp"
+        android:background="@drawable/buttonbase2dark"
+        android:onClick="fazerLogin"
+        android:text="Entrar"
+        android:textColor="@android:color/background_light"
+        />
+
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="255dp"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="87dp"
+        android:background="@drawable/buttonbase2green"
+        android:onClick="fazerCadastro"
+        android:text="Cadastre-se!"
+        android:textColor="@android:color/background_light"
+         />
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logincadastro"
+    tools:context=".Activity.Cadastro1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/select_image_profile"
+        android:layout_width="93dp"
+        android:layout_height="95dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="-178dp"
+        android:background="@drawable/user" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="208dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/select_image_profile"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        android:text="Defina uma foto de perfil"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="242dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/usuarioTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Nome de Usuário"
+            android:inputType="textPersonName"
+            android:background="@drawable/shapbord"
+            android:drawableLeft="@drawable/ic_insert_emoticon_black_24dp"
+            android:padding="5dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="325dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/bioTxt"
+                android:layout_width="311dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:hint="Bio"
+                android:background="@drawable/shapbord"
+                android:drawableLeft="@drawable/ic_create_black_24dp"
+                android:padding="5dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <EditText
+            android:id="@+id/dataNascTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Data de nascimento"
+            android:inputType="date"
+            android:background="@drawable/shapbord"
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Sexo"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/sexoRb"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@drawable/shapbord"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp">
+
+            <RadioButton
+                android:id="@+id/masculinoRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Masculino"
+                android:textSize="17sp"/>
+
+            <RadioButton
+                android:id="@+id/femininoRb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Feminino"
+                android:textSize="17sp"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/talentosTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Talentos"
+            android:inputType="textPersonName"
+            android:background="@drawable/shapbord"
+            android:drawableLeft="@drawable/ic_record_voice_over_black_24dp"
+            android:padding="5dp"
+           />
+
+        <EditText
+            android:layout_marginTop="8dp"
+            android:id="@+id/generosTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapbord"
+            android:drawableLeft="@drawable/ic_music_note_black_24dp"
+            android:ems="10"
+            android:hint="Gêneros favoritos"
+            android:inputType="textPersonName"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConcluir"
+        android:layout_width="123dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginBottom="49dp"
+        android:background="@drawable/buttonbase2green"
+        android:text="Concluir"
+        android:textColor="@android:color/background_light" />
+
+
+
+</RelativeLayout>

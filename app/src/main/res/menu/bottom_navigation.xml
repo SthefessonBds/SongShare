@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id = "@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Inicio">
+    </item>
+
+    <item
+        android:id = "@+id/nav_explorar"
+        android:icon="@drawable/ic_whatshot_black_24dp"
+        android:title="Explorar">
+    </item>
+
+    <item
+        android:id = "@+id/nav_newproject"
+        android:icon="@drawable/ic_library_add_black_24dp"
+        android:title="Novo Projeto"
+        android:iconTint="@color/colorAccent"
+        >
+    </item>
+
+    <item
+        android:id = "@+id/nav_notificacoes"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Notificações">
+    </item>
+
+    <item
+        android:id = "@+id/nav_meusprojetos"
+        android:icon="@drawable/ic_library_music_black_24dp"
+        android:title="Biblioteca">
+    </item>
+
+
+
+</menu>

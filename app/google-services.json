@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "250266631436",
+    "firebase_url": "https://songshare-lvsr2018.firebaseio.com",
+    "project_id": "songshare-lvsr2018",
+    "storage_bucket": "songshare-lvsr2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250266631436:android:c151642faf987522",
+        "android_client_info": {
+          "package_name": "com.example.marcospaulo.projeto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250266631436-fv5tovpmtnless79rvo4lrtnnur3jk6h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.marcospaulo.projeto",
+            "certificate_hash": "b4fc2f34b1fd300edd2b48b51392bc91636a23ef"
+          }
+        },
+        {
+          "client_id": "250266631436-bdui9nb2g2k9hdkhonllposbco74ood7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-q55mq0y9iyKGht6OLcFhLLlj7kYiT5Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250266631436-bdui9nb2g2k9hdkhonllposbco74ood7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

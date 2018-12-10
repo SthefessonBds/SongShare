@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_perfil"
+        android:title="Perfil"
+        android:icon="@drawable/ic_account_circle_black_24dp"></item>
+    <item
+        android:id="@+id/nav_amigos"
+        android:icon="@drawable/ic_whatshot_black_24dp"
+        android:title="Amigos"></item>
+
+    <item
+        android:id="@+id/nav_newproject"
+        android:icon="@drawable/ic_library_add_black_24dp"
+        android:title="Novo Projeto"
+       ></item>
+
+    <item
+        android:id="@+id/nav_meusprojetos"
+        android:icon="@drawable/ic_library_music_black_24dp"
+        android:title="Meus projetos"></item>
+
+
+
+<item android:title="Sobre nós">
+        <menu>
+            <item
+                android:id="@+id/nav_facebook"
+                android:icon="@drawable/ic_public_black_24dp"
+                android:title="Facebook"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Ajuda e Feedback" />
+        </menu>
+    </item>
+
+    <item
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:id="@+id/drawer_sair"
+        android:title="Sair"></item>
+
+</menu>

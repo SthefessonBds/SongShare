@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="#FFF"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Inicio"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:layout_marginLeft="165dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/teladeTolagem"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar_inicio"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_satus"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/background_light"
+                android:elevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        app:srcCompat="@drawable/user" />
+
+                    <TextView
+                        android:id="@+id/text_status"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="22dp"
+                        android:paddingTop="20dp"
+                        android:text="No que você está pensando?"
+                       />
+
+                    <ImageView
+                        android:id="@+id/tirarfoto"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="14dp"
+                        app:srcCompat="@drawable/ic_camera_alt_black_24dp" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/teladeRolagemHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="106dp"
+                android:fillViewport="false"
+                android:visibility="visible"
+                android:orientation="horizontal">
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

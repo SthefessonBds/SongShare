@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark">
+
+    <FrameLayout
+        android:id="@+id/frame_explorar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/background_light">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Explorar"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:padding="10dp"/>
+
+    </FrameLayout>
+
+
+    <ScrollView
+        android:id="@+id/teladeTolagem"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:id="@+id/teladeRolagemHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:fillViewport="false"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <FrameLayout
+                        android:layout_width="410dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/noticia4">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="410dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/noticia2">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="410dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/noticia3">
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="410dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/noticia1">
+                    </FrameLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="300dp"
+               android:layout_marginTop="250dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:layout_marginLeft="17dp"
+                   android:layout_marginTop="0dp"
+                   android:text="CANAIS PARA VOCÊ"
+                   android:textSize="18sp"
+                   android:textColor="#FFF"/>
+
+               <HorizontalScrollView
+                   android:layout_width="match_parent"
+                   android:layout_height="220dp"
+                   android:layout_alignParentTop="true"
+                   android:layout_marginTop="36dp"
+                   android:fillViewport="false"
+                   android:visibility="visible">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="10dp"
+                       android:orientation="horizontal">
+
+                       <FrameLayout
+                           android:layout_marginRight="10dp"
+                           android:layout_width="160dp"
+                           android:layout_height="match_parent"
+                           android:background="@drawable/classic">
+                           <TextView
+                               android:layout_marginTop="150dp"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Clássicas"
+                               android:textAlignment="center"
+                               android:textColor="#FAFAFA"
+                               android:textSize="30sp"/>
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:layout_marginRight="10dp"
+                           android:layout_width="160dp"
+                           android:layout_height="match_parent"
+                           android:background="@drawable/rock">
+                           <TextView
+                               android:layout_marginTop="150dp"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Rock"
+                               android:textAlignment="center"
+                               android:textColor="#FAFAFA"
+                               android:textSize="30sp"/>
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:layout_marginRight="10dp"
+                           android:layout_width="160dp"
+                           android:layout_height="match_parent"
+                           android:background="@drawable/eletronic">
+                           <TextView
+                               android:layout_marginTop="150dp"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Eletrônica"
+                               android:textAlignment="center"
+                               android:textColor="#FAFAFA"
+                               android:textSize="30sp"/>
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:layout_marginRight="10dp"
+                           android:layout_width="160dp"
+                           android:layout_height="match_parent"
+                           android:background="@drawable/pop">
+                           <TextView
+                               android:layout_marginTop="150dp"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Pop"
+                               android:textAlignment="center"
+                               android:textColor="#FAFAFA"
+                               android:textSize="30sp"/>
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:layout_marginRight="10dp"
+                           android:layout_width="160dp"
+                           android:layout_height="match_parent"
+                           android:background="@drawable/guitarra">
+                           <TextView
+                               android:layout_marginTop="150dp"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Acústico"
+                               android:textAlignment="center"
+                               android:textColor="#FAFAFA"
+                               android:textSize="30sp"/>
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:layout_marginRight="10dp"
+                           android:layout_width="160dp"
+                           android:layout_height="match_parent"
+                           android:background="@drawable/musico">
+                           <TextView
+                               android:layout_marginTop="150dp"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Indie"
+                               android:textAlignment="center"
+                               android:textColor="#FAFAFA"
+                               android:textSize="30sp"/>
+                       </FrameLayout>
+
+                   </LinearLayout>
+               </HorizontalScrollView>
+
+
+
+
+           </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?attr/colorButtonNormal">
+
+    <FrameLayout
+        android:id="@+id/frame_novoProjeto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/background_light">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Novo Projeto"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:padding="10dp"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_alignBottom="@+id/frame_novoProjeto"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="317dp"
+        android:layout_marginBottom="-56dp"
+        android:src="@drawable/ic_music_note_black_24dp" />
+
+    <TextView
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="70dp"
+        android:text="Vamos fazer musica!"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="26sp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:background="#FAFAFA">
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/teladeRolagemHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="132dp"
+        android:fillViewport="false"
+        android:visibility="visible">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dp"
+                android:layout_marginRight="118dp"
+                android:background="@drawable/faixa_card"></FrameLayout>
+
+            <FrameLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="118dp"
+                android:background="@drawable/gravar_card"></FrameLayout>
+
+            <FrameLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="118dp"
+                android:background="@drawable/guitarra_card"></FrameLayout>
+
+            <FrameLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="118dp"
+                android:background="@drawable/baixo_card"></FrameLayout>
+
+            <FrameLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="118dp"
+                android:background="@drawable/instrumentos_card"></FrameLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_marginTop="360dp"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precisa de inspiração?"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:text="Melhores tracks"
+            android:textSize="12sp"
+            android:background="#FAFAFA"
+            android:paddingTop="14dp"
+            android:paddingLeft="25dp"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:text="Modelos prontos"
+            android:textSize="12sp"
+            android:background="#FAFAFA"
+            android:paddingTop="14dp"
+            android:paddingLeft="25dp"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ferramentas"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="Compasso"
+                android:textSize="12sp"
+                android:background="#FAFAFA"
+                android:paddingTop="6dp"
+                android:paddingLeft="25dp"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>

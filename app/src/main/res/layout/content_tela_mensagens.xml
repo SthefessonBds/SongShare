@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.TelaMensagens"
+    tools:showIn="@layout/activity_tela_mensagens"
+    >
+
+
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="68dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Pesquisar..."/>
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="73dp"
+        app:srcCompat="@drawable/ic_search_black_24dp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="120dp"
+        android:layout_below="@+id/toolbar_mensagens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="2dp"
+            android:background="@android:color/background_light"
+            android:paddingTop="2dp"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:src="@drawable/victor_user" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:paddingTop="20dp"
+                    android:text="Victor Hugo"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:paddingTop="23dp"
+                    android:text="Online há 3h"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/background_light"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="2dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:src="@drawable/anna" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:paddingTop="20dp"
+                    android:text="Anna Alicia"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="100dp"
+                    android:paddingTop="23dp"
+                    android:text="Online"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
